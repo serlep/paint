@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<section>
+		<div id="drawingtools">
+				<button id="clearcanvas" class="btn"><img src="img/refresh.png" alt="refresh-img"></button>	
+				<button id="pencil" class="btn"><img src="img/pencil.png" alt="pencile-img"></button>
+				<button id="rect" class="btn"><img src="img/rect.png" alt="rect-img"></button>
+				<button id="circle" class="btn"><img src="img/circle.png" alt="circle-img"></button>
+				<button id="line" class="btn"><img src="img/line.png" alt="line-img"></button>
+				<button id="fillrect" class="btn"><img src="img/fillrect.png" alt="fillrect-img"></button>
+				<button id="fillcircle" class="btn"><img src="img/fillcircle.png" alt="fillcircle-img"></button>
+				<button id="eraser" class="btn"><img src="img/eraser.png" alt="eraser-img"></button>
+				<button id="largesize" class="btn"><img src="img/plus.png" alt="plus-img"></button>
+				<button id="smallsize" class="btn"><img src="img/minus.png" alt="minus-img"></button>
+				<button id="openfile" class="btn"><img src="img/file.png" alt="uploadfile-img"></button>
+				<input id="color" type="color"/>	
+		</div>
+		<div class="wrapper">
+			<canvas id="canvas"	height= 700 width = 1000></canvas>
+			<input  type="radio" id="symetrie" name="symetrie" data-symetrie="symetrie">symetrie horizontal</input>
+			<input  type="radio" id="symetrie1" name="symetrie"  data-verticale="verticale">symetrie verticale</input>
+			<input  type="radio" id="default" name="symetrie"  data-symetrie="default" checked>default</input>
+			<a href="#" id="saveimg" download="my-file-name.png"><img src="img/save.png" alt="savefile-img"></a>
+		</div>
+		<input id="file" type="file" accept="Img/" />
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+		
